@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="styles/search.css">
+  <link rel="stylesheet" href="styles/containers/slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <title>Contacto</title>
+</head>
+<body>
+  <header class="header">
+    <input type="checkbox" id="open-menu" class="header__checkbox">
+    <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+    <div class="header-logo-container">
+      <a href="index.html"><img class="header__logo" src="./img/Adidas-Logo.png"></a>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="about.html">About</a></li>
+        <li class="header__nav-item"><a href="online-store.html">Tienda</a></li>
+        <li class="header__nav-item"><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="product">
+      <div class="product__container">
+        <div class="product__first">
+          <div class="product__name">Zapato X</div>
+          <div class="product__price">$1500</div>
+        </div>
+
+
+        <div class="product__second">
+          <section class="wrapper">
+            <i class="fa-solid fa-arrow-left button" id="prev"></i>
+            <div class="image-container">
+              <div class="carousel">
+                <img src="../img//products/SUPERSTAR_II_Blanco_IH8659_01_standard.avif" alt="" class="carousel__images disable-select" draggable="false"/>
+                <img src="../img/products/SUPERSTAR_II_Blanco_IH8659_02_standard_hover.avif" alt="" class="carousel__images disable-select" draggable="false"/>
+                <img src="../img/products/SUPERSTAR_II_Blanco_IH8659_03_standard.avif" alt="" class="carousel__images disable-select" draggable="false"/>
+                <img src="../img/products/SUPERSTAR_II_Blanco_IH8659_03_standard.avif" alt="" class="carousel__images disable-select" draggable="false">
+              </div>
+              <i class="fa-solid fa-arrow-right button" id="next"></i>
+            </div>
+          </section>
+        </div>
+
+
+        <div class="product__third">
+          <div class="product__tags">Hombre</div>
+          <div class="product__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur pariatur molestiae voluptatum, nisi saepe molestias harum fuga, deleniti iure ex doloremque nam ratione asperiores! Officiis perspiciatis iusto necessitatibus nostrum hic!
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="scripts/search.js"></script>
+  <script src="scripts/slider/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+
+
+body {
+  font-family: "Poppins", serif;
+  color: #101632dd;
+  background-color: #f6f6f6;
+  padding: 0;
+  padding-bottom: 500px;
+  margin: 0;
+}
+
+div, ul, nav, header, footer, a, li, label, p, h1{
+  margin: 0;
+  padding: 0;
+}
+
+/* -------Header section*/
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.474);
+  position: relative;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  z-index: 2000;
+}
+
+.header__open-nav-button {
+  color: rgb(0, 0, 0);
+  padding: 0 10px;
+  font-size: 2.9rem;
+  font-weight: 600;
+  position: absolute;
+  right: 10px;
+  height: 70px;
+  transition: all 0.15s;
+  z-index: 3000;
+}
+
+.header__open-nav-button:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.header__nav {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.header__nav-list  {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.header__checkbox:checked ~ .header__nav {
+  display: flex;
+}
+
+.header input[type="checkbox"] {
+  display: none;
+}
+
+.header__logo {
+  max-width: 100%;
+  width: 45px;
+  margin: 10px 20px;
+}
+
+.header__nav-item {
+  list-style: none;
+  font-weight: 500;
+  display: block;
+  padding: 20px;
+}
+
+.header__nav-item a {
+  color: rgb(0, 0, 0);
+}
+
+.header__nav-item a:not(:is(:hover,:active)) {
+  text-decoration: none;
+}
+
+
+/* ------ Header Queries -------*/
+
+
+@media (min-width: 600px) {
+  .header {
+    justify-content: baseline;
+    height: 60px;
+  }
+
+  .header__nav {
+    width: 300px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: static;
+  }
+
+  .header__open-nav-button {
+    display: none;
+  }
+
+  .header__nav-item a {
+    display: inline-block;
+    margin-right: 40px;
+  }
+
+  .header__nav-item {
+    padding: 0;
+
+  }
+
+  .header__nav-list {
+    flex-direction: row;
+    margin: 0;
+    height: auto;
+
+  }
+}
+
+/* ------ Header Ends -------*/
+
+
+/* NEW SALES */
+
+.top-new-sale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+  height: 40px;
+}
+
+.top-new-sale__info {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* NEW SALES-ENDS */

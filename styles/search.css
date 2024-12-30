@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.product {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/* ----------- First Product Section Starts ---------- */
+.product__first {
+  background-color: lightgreen;
+}
+/* ----------- First Product Section Ends ---------- */
+
+
+
+/* ----------- Second Product Section Starts ---------- */
+.second__first {
+  background-color: lightyellow;
+}
+
+.product__image-container {
+  width: 100%;
+}
+
+.product__image {
+  width: 100%;
+}
+/* ----------- Second Product Section Ends ---------- */
+
+
+
+
+/* ----------- Third Product Section Starts ---------- */
+.product__third {
+  background-color: lightblue;
+}
+
+/* ----------- Third Product Section Ends ---------- */
