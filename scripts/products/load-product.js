@@ -41,6 +41,7 @@ export function addGridItemTest(gridItem) {
   for (let i = 1; i <= gridItem; i++) {
     productsHTML += `
     <div class="product-container js-product-container">
+    <a href="search.html?productId=1yq5ys18wwnexclviu">
           <div class="product-container__first-sec">
             <div class="product-container__image-cont">
                 <img src="img/products/Tenis_SL_72_OG_Verde_IF1938_01_standard.avif" alt="Tenis Verde" class="product-container__image">
@@ -53,6 +54,7 @@ export function addGridItemTest(gridItem) {
             <p>2 colores</p>
             <p>Envio Gratis</p>
           </div>
+          </a>
         </div>
     `
   }

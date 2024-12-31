@@ -5,7 +5,6 @@ body {
   color: #101632dd;
   background-color: #f6f6f6;
   padding: 0;
-  padding-bottom: 100px;
   margin: 0;
 }
 
@@ -154,3 +153,117 @@ div, ul, nav, header, footer, a, li, label, p, h1{
 }
 
 /* NEW SALES-ENDS */
+
+/* ----------- Opinion Section Starts ---------- */
+.ending-bar {
+  margin-top: 10vh;
+}
+
+.opinion-container {
+  background-color: #eceff1;
+  padding: 18px;
+}
+
+.opinion-container p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.opinion-container h5 {
+  font-weight: 700;
+  color: #000;
+  font-size: 1.15rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.scroll-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.scroll-up__button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.scroll-up__container {
+  transition: all 0.3s;
+}
+
+.scroll-up__container:hover {
+  scale: 1.05;
+}
+
+.ending-bar__start {
+  text-align: center;
+}
+
+.ending-bar__cart {
+  flex: 1;
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.ending-bar__joining-sale {
+  background-color: #ede734;
+  padding: 40px 0;
+}
+
+.ending-bar__joining-sale p {
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+} 
+
+.ending-bar__joining-sale button {
+  border: none;
+  background-color: #000;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.ending-bar__joining-sale button::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  bottom: -3px;
+  height: 3px;
+  left: 3px;
+  width: 100%;
+}
+
+.ending-bar__joining-sale button::before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  height: 100%;
+  right: -4px;
+  top: 2.5px;
+  width: 3px
+}
+
+
+.ending-bar__joining-sale button:hover {
+  color: #767677;
+}
+
+/* ----------- Opinion Section Ends---------- */

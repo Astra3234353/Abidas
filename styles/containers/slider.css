@@ -54,6 +54,7 @@ i#next {
 
 .carousel__images {
   width: 100%; 
+  min-width: 100%;
 }
 
 .disable-select { 

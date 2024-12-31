@@ -17,17 +17,18 @@ export function renderProductElement(productId) {
     <div class="product__price">$ ${product.price}</div>
   </div>
 
-  <div class="product__second">
+  <div class="product__second disable-select">
+    <div class="wrapper__envio-status">Envío Gratis</div>
     <section class="wrapper">
-      <i class="fa-solid fa-arrow-left button disable-select" id="prev"></i>
+      <i class="fa-solid fa-arrow-left button " id="prev"></i>
       <div class="image-container">
         <div class="carousel">
-          <img src="../${product.getUrl()}" alt="" class="carousel__images disable-select" draggable="false"/>
-          <img src="../${product.extraUrl.url1}" alt="" class="carousel__images disable-select" draggable="false"/>
-          <img src="../${product.extraUrl.url2}" alt="" class="carousel__images disable-select" draggable="false"/>
-          <img src="../${product.extraUrl.url3}" alt="" class="carousel__images disable-select" draggable="false"/>
+          <img src="${product.getUrl()}" alt="" class="carousel__images" draggable="false"/>
+          <img src="${product.extraUrl.url1}" alt="" class="carousel__images" draggable="false"/>
+          <img src="${product.extraUrl.url2}" alt="" class="carousel__images" draggable="false"/>
+          <img src="${product.extraUrl.url3}" alt="" class="carousel__images" draggable="false"/>
         </div>
-        <i class="fa-solid fa-arrow-right button disable-select" id="next"></i>
+        <i class="fa-solid fa-arrow-right button" id="next"></i>
       </div>
     </section>
   </div>
@@ -36,33 +37,27 @@ export function renderProductElement(productId) {
     <div class="product__third-info">
       <p>Colores</p>
       <div class="product-colors">Mineral Green / Off White / Legend Ink</div>
-      <p>${product.description}</p>
     </div>
     <div class="product__third-grid">
       <p>Tallas</p>
-      <section class="product-size-grid">
-        <p>MX 1</p>
-        <p>MX 2</p>
-        <p>MX 3</p>
-        <p>MX 4</p>
-        <p>MX 5</p>
-        <p>MX 6</p>
-        <p>MX 7</p>
-        <p>MX 8</p>
+      <section class="product-size-grid disable-select">
         <p>MX 9</p>
+        <p>MX 2</p>
+        <p>MX 2.5</p>
+        <p>MX 3</p>
+        <p>MX 3.5</p>
+        <p>MX 4</p>
+        <p>MX 4.5</p>
+        <p>MX 5</p>
+        <p>MX 5.5</p>
+        <p>MX 6</p>
+        <p>MX 6.5</p>
+        <p>MX 7</p>
+        <p>MX 7.5</p>
+        <p>MX 8</p>
+        <p>MX 8.5</p>
+        <p>MX 9.5</p>
         <p>MX 10</p>
-        <p>MX 11</p>
-        <p>MX 12</p>
-        <p>MX 13</p>
-        <p>MX 14</p>
-        <p>MX 15</p>
-        <p>MX 16</p>
-        <p>MX 17</p>
-        <p>MX 18</p>
-        <p>MX 19</p>
-        <p>MX 20</p>
-        <p>MX 21</p>
-        <p>MX 22</p>
       </section>
     </div>
   </div>

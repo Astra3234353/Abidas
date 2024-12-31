@@ -31,3 +31,16 @@ export function addGalleryEvent() {
     button.addEventListener("click", handleButtonClick);
   });
 }
+
+export function addScrollEvent() {
+  function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+  }
+
+  document.querySelector('.scroll-up__button').addEventListener('click', () => {
+    scrollToTop();
+  });
+}
