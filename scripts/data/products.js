@@ -6,6 +6,7 @@ class Product {
   description;
   tag;
   extra;
+  extraUrl;
 
   constructor(object) {
     this.#url = object.url;
@@ -15,6 +16,7 @@ class Product {
     this.description = object.description;
     this.tag = object.tag;
     this.extra = object.extra;
+    this.extraUrl = object.extraUrl;
   }
 
   getUrl() {
@@ -32,7 +34,7 @@ class Product {
   ArrayToString(array) {
     let returning = ''
     array.forEach((item) => {
-      returning += `<p>${item}</p>`
+      returning += `/ <a href="online-store.html"><span> ${item}</span></a>`
     })
 
     return returning
