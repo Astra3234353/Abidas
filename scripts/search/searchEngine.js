@@ -22,10 +22,10 @@ export function renderProductElement(productId) {
       <i class="fa-solid fa-arrow-left button disable-select" id="prev"></i>
       <div class="image-container">
         <div class="carousel">
-          <img src="../${product.getUrl()}" alt="" class="carousel__images disable-select" draggable="false"/>
-          <img src="../${product.extraUrl.url1}" alt="" class="carousel__images disable-select" draggable="false"/>
-          <img src="../${product.extraUrl.url2}" alt="" class="carousel__images disable-select" draggable="false"/>
-          <img src="../${product.extraUrl.url3}" alt="" class="carousel__images disable-select" draggable="false"/>
+          <img src="${product.getUrl()}" alt="" class="carousel__images disable-select" draggable="false"/>
+          <img src="${product.extraUrl.url1}" alt="" class="carousel__images disable-select" draggable="false"/>
+          <img src="${product.extraUrl.url2}" alt="" class="carousel__images disable-select" draggable="false"/>
+          <img src="${product.extraUrl.url3}" alt="" class="carousel__images disable-select" draggable="false"/>
         </div>
         <i class="fa-solid fa-arrow-right button disable-select" id="next"></i>
       </div>
