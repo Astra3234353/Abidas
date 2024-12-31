@@ -6,7 +6,7 @@ export function renderGridItems () {
   products.forEach((product) => {
     productsHTML += `
       <div class="product-container js-product-container">
-      <a href="/search.html?productId=${product.id}">
+      <a href="search.html?productId=${product.id}">
         <div class="product-container__first-sec">
           <div class="product-container__image-cont">
             <img src="${product.getUrl()}" class="product-container__image">
