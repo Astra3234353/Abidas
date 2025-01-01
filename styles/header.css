@@ -267,3 +267,10 @@ div, ul, nav, header, footer, a, li, label, p, h1{
 }
 
 /* ----------- Opinion Section Ends---------- */
+
+.disable-select { 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

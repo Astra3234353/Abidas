@@ -70,6 +70,16 @@ a {
   z-index: 100;
 }
 
+.product-container__image-hover {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  top: 0;
+  position: absolute;
+  z-index: 200;
+  display: none;
+}
+
 .product-container__price {
   font-size: 0.8rem;
   margin-bottom: 7px;
@@ -112,5 +122,9 @@ a {
 
   .product-container:hover {
     box-shadow: 0 0 0 1px rgb(0, 0, 0);
+  }
+
+  .product-container__image-cont:hover .product-container__image-hover {
+    display: inline-block;
   }
 }

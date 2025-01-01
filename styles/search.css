@@ -99,7 +99,8 @@ a {
 }
 
 .product__third-info {
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .product__image-container {
@@ -120,7 +121,7 @@ a {
   text-wrap: nowrap;
   font-size: 0.85rem;
   left: -15px;
-  padding: 5px;
+  padding: 6px;
   text-transform: uppercase;
   transform: rotate(-90deg);
   background-color: #ffffff;
@@ -134,6 +135,13 @@ a {
 /* ----------- Third Product Section Starts ---------- */
 .product__third {
   padding: 0 2px 40px 20px;
+}
+
+.product__third-grid {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1500;
 }
 
 .product__third p {
