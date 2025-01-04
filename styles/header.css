@@ -18,41 +18,46 @@ div, ul, nav, header, footer, a, li, label, p, h1{
 .header {
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.474);
-  position: relative;
   position: sticky;
   top: 0;
-  height: 70px;
+  height: 60px;
   z-index: 2000;
 }
 
 .header__open-nav-button {
-  color: rgb(0, 0, 0);
-  padding: 0 10px;
-  font-size: 2.9rem;
-  font-weight: 600;
   position: absolute;
-  right: 10px;
-  height: 70px;
-  transition: all 0.15s;
-  z-index: 3000;
+  font-size: 2.5rem;
+  left: 0;
+  padding: 0 20px;
+  height: 60px;
+  transition: stroke 0.3s ease; 
+  z-index: 2000;
 }
 
 .header__open-nav-button:hover {
   background-color: black;
-  color: #fff;
+}
+
+.hamburger-icon {
+  stroke: black; 
+  transition: stroke 0.3s ease; 
+}
+
+.header__open-nav-button:hover svg {
+  stroke: #ffffff;
 }
 
 .header__nav {
   display: none;
   background-color: white;
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 0;
   right: 0;
-  z-index: 1100;
+  z-index: 1000;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -74,8 +79,8 @@ div, ul, nav, header, footer, a, li, label, p, h1{
 
 .header__logo {
   max-width: 100%;
-  width: 45px;
-  margin: 10px 20px;
+  width: 55px;
+  margin-top: 10px;
 }
 
 .header__nav-item {
@@ -83,6 +88,7 @@ div, ul, nav, header, footer, a, li, label, p, h1{
   font-weight: 500;
   display: block;
   padding: 20px;
+  margin-left: 20px;
 }
 
 .header__nav-item a {
@@ -93,22 +99,27 @@ div, ul, nav, header, footer, a, li, label, p, h1{
   text-decoration: none;
 }
 
+.links-container {
+  display: flex;
+}
+
+.nav-item-light {
+  font-weight: 400 !important;
+}
 
 /* ------ Header Queries -------*/
 
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .header {
-    justify-content: baseline;
-    height: 60px;
+    justify-content: flex-start;
+    height: 81px;
   }
 
   .header__nav {
-    width: 300px;
-    width: auto;
-    height: auto;
     display: inline-block;
     position: static;
+    margin-left: 50px;
   }
 
   .header__open-nav-button {
@@ -117,12 +128,15 @@ div, ul, nav, header, footer, a, li, label, p, h1{
 
   .header__nav-item a {
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 0;
   }
 
   .header__nav-item {
     padding: 0;
-
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.88rem;
+    font-weight: 600;
   }
 
   .header__nav-list {
@@ -130,6 +144,16 @@ div, ul, nav, header, footer, a, li, label, p, h1{
     margin: 0;
     height: auto;
 
+  }
+
+  .header-logo-container {
+    margin-top: 5px;
+  }
+
+  .header__logo  {
+    width: 66px;
+    margin-left: 20px;
+    margin-bottom: 5px;
   }
 }
 
@@ -264,6 +288,17 @@ div, ul, nav, header, footer, a, li, label, p, h1{
 
 .ending-bar__joining-sale button:hover {
   color: #767677;
+}
+
+.links-container {
+  position: absolute;
+  top: 32%;
+  right: 22px;
+}
+
+.links-container a {
+  text-decoration: none;
+  margin-left: 24px;
 }
 
 /* ----------- Opinion Section Ends---------- */

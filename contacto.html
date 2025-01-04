@@ -12,17 +12,49 @@
 <body>
   <header class="header">
     <input type="checkbox" id="open-menu" class="header__checkbox">
-    <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+    <label for="open-menu" class="header__open-nav-button" role="button">
+      <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 24 24" 
+      width="24px" 
+      height="24px" 
+      class="hamburger-icon">
+      <path d="M0 6h24M0 12h24M0 18h24" fill="#000" stroke-width="2"></path>
+    </svg>   
+    </label>
     <div class="header-logo-container">
-      <a href="index.html"><img class="header__logo" src="./img/fav.jpeg"></a>
+      <a href="index.html"><img class="header__logo" src="./img/Adidas-Logo.png"></a>
     </div>
     <nav class="header__nav">
       <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="about.html">About</a></li>
         <li class="header__nav-item"><a href="online-store.html">Tienda</a></li>
-        <li class="header__nav-item"><a href="contacto.html">Contacto</a></li>
+        <li class="header__nav-item"><a href="cart.html">Carrito</a></li>
+        <li class="header__nav-item nav-item-light"><a href="online-store.html?search=random">Calzado</a></li>
+        <li class="header__nav-item nav-item-light"><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
+    <div class="links-container">
+      <div class="header__cart-link">
+        <a href="online-store.html">     
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24" width="24px" height="24px">
+            <g fill="none" stroke="black" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2">
+              <circle cx="8" cy="10" r="6"></circle>
+              <path d="m13 15 5 5"></path>
+            </g>
+          </svg>   
+        </a>
+      </div>
+      <div class="header__search-link">
+        <a href="cart.html">     
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 24" width="24px" height="24px">
+            <g fill="none" stroke="black" stroke-miterlimit="10" stroke-width="2">
+              <path d="M1 7h14v14H1z"></path>
+              <path d="M11 10V3H5v7"></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
   </header>
 
   <section class="ending-bar">
