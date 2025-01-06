@@ -1,5 +1,5 @@
-import { renderGridItems, addGridItemTest } from "../scripts/load-product.js";
-import { products } from "../data/products.js";
+import { renderGridItems, addGridItemTest } from "../scripts/products/load-product.js";
+import { products } from "../scripts/data/products.js";
 
 describe('test suite: Load Products', () => {
   beforeEach(() => {

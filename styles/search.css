@@ -191,4 +191,13 @@ a {
   color: #fff;
 }
 
+.product__third-add-cart {
+  display: flex;
+  margin: 20px;
+  margin-left: 0;
+}
+
+.product__third-grid button {
+  flex: 1;
+}
 /* ----------- Third Product Section Ends ---------- */

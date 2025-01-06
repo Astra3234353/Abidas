@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/checkout.css">
   <title>Carrito</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
       <p>Hasta 6 meses sin intereses 💳</p>
     </div>
   </div>
-  <header class="header">
+  <nav class="header">
     <input type="checkbox" id="open-menu" class="header__checkbox">
     <label for="open-menu" class="header__open-nav-button" role="button">
       <svg 
@@ -60,7 +61,74 @@
         </a>
       </div>
     </div>
-  </header>
+    <div class="header__whishlist-link">
+      <a href="wishlists.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24" width="24px" height="24px">
+          <title>wishlist-active</title>
+          <path 
+            fill="black" 
+            stroke="black" 
+            stroke-miterlimit="10" 
+            stroke-width="2" 
+            d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
+          ></path>
+        </svg>   
+      </a>     
+    </div>
+  </nav>
+
+  <main>
+    <div class="cart-summary">
+      <div class="cart-summary__first">
+        <header>
+          <div class="cart-summary__data">
+            <h1>Tu Carrito</h1>
+            <h2>TOTAL (1 producto)
+              <span>$1,699</span>
+            </h2>
+            <p>Los artículos en tu carrito no están reservados. Termina el proceso de compra ahora para hacerte con ellos.</p>
+          </div>
+          <div class="cart-summary__beneficios">
+            <h3>🚚BENEFICIOS PARA TI🚚</h3>
+            <p>Aprovecha envíos gratis por comprar superiores a $1,299. Hasta el 31 de diciembre de 2025. 💳 Disfruta meses sin intereses comprando con tarjeta de crédito: $3,500 = 3 meses sin interés. 💳 *No aplica para Tarjeta de Regalos.</p>
+          </div>
+          <main class="cart-summary__product-container">
+          </main>
+        </header>
+      </div>
+      <div class="cart-summary__second">
+        <aside class="cart-summary__aside">
+           <button class="black-abidas-btn">Ir a pagar</button>
+           <p class="bold-title">RESUMEN DEL PEDIDO</p>
+               <div class="aside__grid">
+                  <div class="aside__grid-item">
+                    <p>1 producto</p>
+                    <p>$1,699.00</p>
+                  </div>
+                  <div class="aside__grid-item">
+                    <p>Precio original</p>
+                    <p>$2,199.00</p>
+                  </div>
+                  <div class="aside__grid-item">
+                    <p>Entrega</p>
+                    <p>Gratis</p>
+                  </div>
+                  <div class="aside__grid-item descuento-item">
+                    <p>Descuento</p>
+                    <p>-$682.00</p>
+                  </div>
+                  <div class="aside__grid-item total-item">
+                    <p>Total</p>
+                    <p>$1,699.00</p>
+                  </div>
+                  <div class="aside__grid-item IVA-item">    
+                    <p>[IVA incluido $209.24]</p>
+                  </div>
+               </div>
+        </aside>
+      </div>
+    </div>
+  </main>
 
   <section class="ending-bar">
     <div class="opinion-container">
@@ -82,10 +150,12 @@
 
     <div class="ending-bar__joining-sale">
         <p>ÚNETE AL CLUB Y RECIBE 500 PUNTOS DE BIENVENIDA</p>
-        <a href="index.html"><button>Registrate Gratis</button></a>
+        <a href="index.html"><button class="black-abidas-btn">Registrate Gratis</button></a>
       </div>
     </div>
 
   </section>
+
+  <script type="module" src="./scripts/checkout.js"></script>
 </body>
 </html>

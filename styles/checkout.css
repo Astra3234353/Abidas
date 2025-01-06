@@ -1,0 +1,196 @@
+.cart-summary {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 45px;
+  margin: 45px 15px;
+}
+
+.cart-summary p {
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .cart-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-summary h1 {
+    font-size: 1.65rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .cart-summary {
+    max-width: 1250px;
+    margin: auto;
+  }
+}
+
+
+/*    Checkout First Starts   */
+.cart-summary__first {
+  border: solid 1px rgb(255, 255, 255);
+}
+
+h1 {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+}
+
+h2 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+h2 + p {
+  margin-bottom: 18px;
+}
+
+h2 span {
+  font-weight: 600;
+}
+
+h3 {
+  color: #000000;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.cart-summary__beneficios {
+  background-color: #eceff1;
+  padding: 20px 30px;
+  margin: 10px 0;
+}
+/*    Checkout First Ends   */
+
+
+
+
+
+/*    Checkout Summary First Starts   */
+.cart-summary__product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 0;
+}
+
+.cart-summary__product:first-child {
+  margin-top: 40px;
+}
+
+.cart-summary__product-img {
+  width: 100%;
+  max-height: 240px;
+}
+
+.cart-summary__product-info {
+  margin: 0 20px;
+  text-transform: uppercase !important;
+}
+
+.cart-summary__product-info {
+  position: relative;
+}
+
+.cross-svg {
+  position: absolute;
+  top: 5px;
+  right: -10px;
+}
+
+.cross-svg svg {
+  fill: #000000;
+  transition: fill 0.3s ease;
+}
+
+.cross-svg:hover svg {
+  fill: #6b6b6b;
+}
+
+@media (min-width: 550px) {
+  .cart-summary__product {
+    grid-template-columns: 240px 1fr;
+    border: solid 1px #000000;
+  }
+
+  .cart-summary__product-img {
+    width: 240px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cart-summary__product {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-summary__product-img {
+    width: 100%;
+  }
+}
+
+/*    Checkout Summary First Ends   */
+
+
+
+
+
+/*    Checkout Second Starts   */
+.cart-summary__second {
+  margin: 0 10px 0 0;
+}
+
+.cart-summary__aside {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.cart-summary__aside button {
+  width: 100%;
+}
+
+.cart-summary__aside .bold-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 55px 0 20px;
+}
+
+.aside__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3px 0
+}
+
+.aside__grid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aside__grid-item p:nth-child(2n) {
+  text-align: right;
+}
+
+.descuento-item p, .IVA-item p{
+  color: #767677;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.IVA-item p:first-child {
+  grid-column: 1/span 2;
+}
+
+.descuento-item p {
+  padding: 12px 0;
+}
+
+.total-item p {
+  font-weight: 700;
+}
+
+/*    Checkout Second Ends   */

@@ -1,4 +1,6 @@
 import { products } from "../data/products.js";
+import { addGalleryEvent, addScrollEvent } from "./slider.js";
+import { saveCartItem } from "../data/cart.js";
 
 export function renderProductElement(productId) {
   const productElem = document.querySelector('.product')
@@ -7,7 +9,6 @@ export function renderProductElement(productId) {
     if (product.id == productId) {
       productElem.innerHTML = `
 <div class="product__container">
-
   <div class="product__first">
     <div class="product__tags">
       <a href="online-store.html"><span>Inicio</span></a>
@@ -58,13 +59,22 @@ export function renderProductElement(productId) {
         <p>MX 7.5</p>
         <p>MX 8</p>
         <p>MX 8.5</p>
-        <p>MX 9.5</p>
-        <p>MX 10</p>
+        <p>MX 9</p>
       </section>
+      <div class="product__third-add-cart">
+        <button class="black-abidas-btn js-add-to-cart">Agregar al carrito</button>
+      </div>
     </div>
   </div>
 </div>
       `;
     } 
   })
+
+  document.querySelector('.js-add-to-cart').addEventListener('click', () => {
+    saveCartItem(productId);
+  });
+  
+  addGalleryEvent();
+  addScrollEvent();
 }
