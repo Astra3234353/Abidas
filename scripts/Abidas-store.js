@@ -13,5 +13,4 @@ function renderPage() {
 renderPage();
 addGridItemTest(11)
 
-console.log('Have you lost something? ;0');
-console.log('By: Astra.dev');
+console.log('Pages created by: AstraDev');

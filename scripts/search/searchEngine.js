@@ -1,4 +1,5 @@
 import { products } from "../data/products.js";
+import { addGalleryEvent, addScrollEvent } from "./slider.js";
 
 export function renderProductElement(productId) {
   const productElem = document.querySelector('.product')
@@ -58,13 +59,22 @@ export function renderProductElement(productId) {
         <p>MX 7.5</p>
         <p>MX 8</p>
         <p>MX 8.5</p>
-        <p>MX 9.5</p>
-        <p>MX 10</p>
+        <p>MX 9</p>
       </section>
+      <div class="product__third-add-cart">
+        <button class="black-abidas-btn js-add-to-cart">Agregar al carrito</button>
+      </div>
     </div>
   </div>
 </div>
       `;
     } 
   })
+
+  document.querySelector('.js-add-to-cart').addEventListener('click', () => {
+    console.log('Product added to cart');
+  });
+  
+  addGalleryEvent();
+  addScrollEvent();
 }

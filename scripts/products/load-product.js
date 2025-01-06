@@ -50,7 +50,7 @@ export function renderGridItems () {
       <a href="search.html?productId=${product.id}">
         <div class="product-container__first-sec">
           <div class="product-container__image-cont">
-            <img src="${product.getUrl()}" class="product-container__image">
+            <img src="${product.getUrl()}" class="product-container__image" draggable="false">
           </div>
         </div>
         <div class="product-container__second-sec">

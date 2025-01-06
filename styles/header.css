@@ -3,7 +3,7 @@
 body {
   font-family: "Poppins", serif;
   color: #101632dd;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
   padding: 0;
   margin: 0;
 }
@@ -107,6 +107,12 @@ div, ul, nav, header, footer, a, li, label, p, h1{
   font-weight: 400 !important;
 }
 
+.header__whishlist-link {
+  position: absolute;
+  left: 68px;
+  top: 20px;
+}
+
 /* ------ Header Queries -------*/
 
 
@@ -154,6 +160,13 @@ div, ul, nav, header, footer, a, li, label, p, h1{
     width: 66px;
     margin-left: 20px;
     margin-bottom: 5px;
+  }
+
+  .header__whishlist-link {
+    position: absolute;
+    left: auto;
+    top: 26px;
+    right: 100px;
   }
 }
 
@@ -250,7 +263,7 @@ div, ul, nav, header, footer, a, li, label, p, h1{
   color: #000;
 } 
 
-.ending-bar__joining-sale button {
+.black-abidas-btn {
   border: none;
   background-color: #000;
   color: #ffffff;
@@ -263,7 +276,7 @@ div, ul, nav, header, footer, a, li, label, p, h1{
   position: relative;
 }
 
-.ending-bar__joining-sale button::after {
+.black-abidas-btn::after {
   content: "";
   position: absolute;
   border-bottom: 1px solid #000;
@@ -274,7 +287,7 @@ div, ul, nav, header, footer, a, li, label, p, h1{
   width: 100%;
 }
 
-.ending-bar__joining-sale button::before {
+.black-abidas-btn::before {
   content: "";
   position: absolute;
   border-top: 1px solid #000;
@@ -285,15 +298,18 @@ div, ul, nav, header, footer, a, li, label, p, h1{
   width: 3px
 }
 
-
-.ending-bar__joining-sale button:hover {
+.black-abidas-btn:hover {
   color: #767677;
+}
+
+.black-abidas-btn:active {
+  transform:scale(1.03);
 }
 
 .links-container {
   position: absolute;
   top: 32%;
-  right: 22px;
+  right: 5px;
 }
 
 .links-container a {

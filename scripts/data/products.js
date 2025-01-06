@@ -34,7 +34,7 @@ class Product {
   ArrayToString(array) {
     let returning = ''
     array.forEach((item) => {
-      returning += `/ <a href="online-store.html"><span> ${item}</span></a>`
+      returning += `<a href="online-store.html"><span> ${item}</span></a> /`
     })
 
     return returning
