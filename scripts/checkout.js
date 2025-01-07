@@ -1,6 +1,5 @@
 import { cart } from "./data/cart.js";
 import { addScrollEvent } from "./search/slider.js";
-<<<<<<< HEAD
 import { products } from "./data/products.js";
 
 let totalPrice = 0;
@@ -43,9 +42,3 @@ function renderCartSummary() {
 
   console.log(totalPrice);
 }
-=======
-
-addScrollEvent();
-
-console.log(cart);
->>>>>>> ba212085bd1c3ba1cdb878dad5fd11e21275002f
