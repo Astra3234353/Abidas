@@ -77,13 +77,10 @@ h3 {
 .cart-summary__product {
   display: grid;
   grid-template-columns: 1fr 1fr;
-<<<<<<< HEAD
   margin: 20px 0;
 }
 
 .cart-summary__product:first-child {
-=======
->>>>>>> ba212085bd1c3ba1cdb878dad5fd11e21275002f
   margin-top: 40px;
 }
 
@@ -184,13 +181,10 @@ h3 {
   font-weight: 400;
 }
 
-<<<<<<< HEAD
 .IVA-item p:first-child {
   grid-column: 1/span 2;
 }
 
-=======
->>>>>>> ba212085bd1c3ba1cdb878dad5fd11e21275002f
 .descuento-item p {
   padding: 12px 0;
 }
