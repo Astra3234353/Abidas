@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export const cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
 
 function saveLocalStorage() {
@@ -26,3 +27,6 @@ export function saveCartItem(productId) {
   console.log(cart);
   saveLocalStorage();
 }
+=======
+export let cart = [];
+>>>>>>> ba212085bd1c3ba1cdb878dad5fd11e21275002f

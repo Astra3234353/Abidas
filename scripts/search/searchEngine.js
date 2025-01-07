@@ -1,6 +1,9 @@
 import { products } from "../data/products.js";
 import { addGalleryEvent, addScrollEvent } from "./slider.js";
+<<<<<<< HEAD
 import { saveCartItem } from "../data/cart.js";
+=======
+>>>>>>> ba212085bd1c3ba1cdb878dad5fd11e21275002f
 
 export function renderProductElement(productId) {
   const productElem = document.querySelector('.product')
@@ -72,7 +75,11 @@ export function renderProductElement(productId) {
   })
 
   document.querySelector('.js-add-to-cart').addEventListener('click', () => {
+<<<<<<< HEAD
     saveCartItem(productId);
+=======
+    console.log('Product added to cart');
+>>>>>>> ba212085bd1c3ba1cdb878dad5fd11e21275002f
   });
   
   addGalleryEvent();
