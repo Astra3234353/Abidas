@@ -249,6 +249,76 @@ export const products = [
     url2: 'img/products/ECLYPTIX_2000_Gris_JP9629_03_standard.avif',
     url3: 'img/products/ECLYPTIX_2000_Gris_JP9629_04_standard.avif'
   }
+},
+
+{
+  url: 'img/products/Tenis_Aspyre_Blanco_JI2124_01_00_standard.avif',
+  id: 'kr1p208jut0vhj05b',
+  name: 'Tenis Aspyre',
+  price: '1599',
+  description: 'Eclyptix 2000 es un nuevo producto para Hombre de adidas. Te invitamos a ver las imágenes para apreciar más detalles desde diferentes ángulos. Si ya conoces Eclyptix 2000 puedes dejar una reseña abajo; siempre nos encanta conocer tu opinión. Aún estamos trabajando para tener más información de Eclyptix 2000, así que vuelva pronto. Mientras tanto, toma nota del número de artículo que identifica el producto JP9629 para que lo puedas encontrar de nuevo fácilmente. Está categorizado como: Zapatillas y Tenis',
+  tag: {
+      f1: 'Hombre Sportswear',
+      f2: '3 colores'
+    },
+  extra: 'Envio Gratis',
+  extraUrl: {
+    url1: 'img/products/Tenis_Aspyre_Blanco_JI2124_02_standard_hover_hover_hover_hover.avif',
+    url2: 'img/products/Tenis_Aspyre_Blanco_JI2124_03_standard.avif',
+    url3: 'img/products/Tenis_Aspyre_Blanco_JI2124_04_standard.avif'
+  }
+},
+
+{
+  url: 'img/products/FORUM2000_Blanco_JI3276_01_00_standard.avif',
+  id: 'bls3b8jut0k6mzp8',
+  name: 'FORUM2000',
+  price: '2399',
+  description: 'Forum2000 es un nuevo producto para Unisex de adidas. Te invitamos a ver las imágenes para apreciar más detalles desde diferentes ángulos. Si ya conoces Forum2000 puedes dejar una reseña abajo; siempre nos encanta conocer tu opinión.',
+  tag: {
+      f1: 'Originals',
+    },
+  extra: 'Envio Gratis',
+  extraUrl: {
+    url1: 'img/products/FORUM2000_Blanco_JI3276_01_02_hover_standard.avif',
+    url2: 'img/products/FORUM2000_Blanco_JI3276_02_standard.avif',
+    url3: 'img/products/FORUM2000_Blanco_JI3276_03_standard.avif'
+  }
+},
+
+{
+  url: 'img/products/Tenis_Forum_Mid_Hanami_Blanco_IG9646_01_standard.avif',
+  id: 'bls3b8jut0k6mzp8',
+  name: 'Tenis altos Y-3 Centennial',
+  price: '8999',
+  description: 'Una interpretación moderna de las zapatillas de básquet, las zapatillas Y-3 Centennial High se inspiran en zapatillas de los archivos de adidas pero con un nuevo punto de vista. Una mezcla de materiales les da un look y tacto premium en cuero, lona y gamuza con un forro interno de cuero y lona. Las 3 Franjas impactan en el costado interno, mientras que el antepié ancho marca un elemento distintivo de los tenis Y-3 para las canchas de tenis.',
+  tag: {
+      f1: 'Y-3',
+      f2: '2 colores'
+    },
+  extra: 'Envio Gratis',
+  extraUrl: {
+    url1: 'img/products/Tenis_Forum_Mid_Hanami_Blanco_IG9646_02_standard.avif',
+    url2: 'img/products/Tenis_Forum_Mid_Hanami_Blanco_IG9646_03_standard.avif',
+    url3: 'img/products/Tenis_Forum_Mid_Hanami_Blanco_IG9646_011_hover_standard.avif'
+  }
+},
+
+{
+  url: 'img/products/Tenis_altos_Y-3_Centennial_Negro_IG4081_01_standard.avif',
+  id: 'bls3b8jut0k6mzp8',
+  name: 'Tenis Forum Mid Hanami',
+  price: '3299',
+  description: 'Forum Mid Hnm es un nuevo producto para Hombre de adidas. Te invitamos a ver las imágenes para apreciar más detalles desde diferentes ángulos. Si ya conoces Forum Mid Hnm puedes dejar una reseña abajo; siempre nos encanta conocer tu opinión.',
+  tag: {
+      f1: 'Hombres Originals',
+    },
+  extra: 'Envio Gratis',
+  extraUrl: {
+    url1: 'img/products/Tenis_altos_Y-3_Centennial_Negro_IG4081_02_standard_hover.avif',
+    url2: 'img/products/Tenis_altos_Y-3_Centennial_Negro_IG4081_03_standard.avif',
+    url3: 'img/products/Tenis_altos_Y-3_Centennial_Negro_IG4081_04_standard.avif'
+  }
 }].map((item) => {
   return new Product(item);
 });
