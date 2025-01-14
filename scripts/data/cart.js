@@ -1,4 +1,4 @@
-export const cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
+export let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
 
 function saveLocalStorage() {
   localStorage.setItem('cart', JSON.stringify(cart));
@@ -24,5 +24,19 @@ export function saveCartItem(productId) {
   }
 
   console.log(cart);
+  saveLocalStorage();
+}
+
+export function deleteCartItem(productId) {
+  let newCart = [];
+  cart.forEach((obj) => {
+    if (obj.id === productId) {
+      console.log('conincidencia')
+    } else {
+      newCart.push(obj)
+    }
+  })
+
+  cart = newCart;
   saveLocalStorage();
 }

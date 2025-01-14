@@ -98,19 +98,29 @@ h3 {
   position: relative;
 }
 
-.cross-svg {
+.delete-item-button {
+  border: none;
+  background-color: transparent;
   position: absolute;
   top: 5px;
   right: -10px;
 }
 
-.cross-svg svg {
+.delete-item-button svg {
   fill: #000000;
   transition: fill 0.3s ease;
 }
 
-.cross-svg:hover svg {
+.delete-item-button:hover svg {
   fill: #6b6b6b;
+}
+
+.old-product-price {
+  text-decoration: line-through;
+}
+
+.final-product-price {
+  color: #E32B2B !important
 }
 
 @media (min-width: 550px) {
