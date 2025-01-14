@@ -65,7 +65,7 @@ function loadPriceElements() {
   document.querySelector('.cart-summary__second')
     .innerHTML = `
               <aside class="cart-summary__aside">
-           <button class="black-abidas-btn">Ir a pagar</button>
+           <button class="black-abidas-btn js-payment-button">Ir a pagar</button>
            <p class="bold-title">RESUMEN DEL PEDIDO</p>
                <div class="aside__grid">
                   <div class="aside__grid-item">
@@ -95,3 +95,8 @@ function loadPriceElements() {
         </aside>
     `
 }
+
+document.querySelector('.js-payment-button')
+  .addEventListener('click', () => {
+    alert('hAs sIdO hAcKedO - Fr quieres pagarle a una pagina ficticia llamada Abidas? Es una pena que no sepa meter pagos...')
+  })
