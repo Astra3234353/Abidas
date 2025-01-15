@@ -9,7 +9,6 @@ let totalProducts = 0;
 addScrollEvent();
 renderCartSummary();
 
-
 function renderCartSummary() {
   let mainElement = ``;
 
@@ -23,7 +22,7 @@ function renderCartSummary() {
             <h4>${product.name}</h4>
             <p>${product.extra}</p>
             <p> Talla: MX 11</p>
-            <p class="old-product-price">$${addComasToNumber(product.price + 301)}</p>
+            <p class="old-product-price">$${addComasToNumber(product.price + 300)}</p>
             <p class="final-product-price">$${addComasToNumber(product.price)}</p>
             <p>Cantidad: ${cartItem.quantity}</p>
             <button class="delete-item-button js-delete-item-btn" data-product-id="${product.id}">
@@ -56,10 +55,12 @@ function renderCartSummary() {
         
         document.querySelector(`.js-product-${productId}`)
           .remove();
+
+        loadPriceValues();
+        loadPriceElements();
       })
     });
 }
-
 
 function loadPriceElements() {
   document.querySelector('.cart-summary__second')
@@ -74,7 +75,7 @@ function loadPriceElements() {
                   </div>
                   <div class="aside__grid-item">
                     <p>Precio original</p>
-                    <p>$${addComasToNumber(totalPrice + (totalProducts * 301))}</p>
+                    <p>$${addComasToNumber(totalPrice + (totalProducts * 300))}</p>
                   </div>
                   <div class="aside__grid-item">
                     <p>Entrega</p>
@@ -82,7 +83,7 @@ function loadPriceElements() {
                   </div>
                   <div class="aside__grid-item descuento-item">
                     <p>Descuento</p>
-                    <p>-$${addComasToNumber(totalProducts * 301)}</p>
+                    <p>-$${addComasToNumber(totalProducts * 300)}</p>
                   </div>
                   <div class="aside__grid-item total-item">
                     <p>Total</p>
@@ -94,8 +95,34 @@ function loadPriceElements() {
                </div>
         </aside>
     `
+
+  document.querySelector('.cart-summary__data-render')
+    .innerHTML = `
+      <h2>TOTAL (${totalProducts})
+          <span>$${addComasToNumber(totalPrice)}</span>
+      </h2>
+    `
 }
 
+function loadPriceValues() {
+  totalPrice = 0;
+  totalProducts = 0;
+
+  products.forEach((product) => {
+    cart.forEach((cartItem) => {
+      if (product.id == cartItem.id)  {
+        totalPrice += product.price * cartItem.quantity;
+        totalProducts += cartItem.quantity
+      }
+    })
+  })
+}
+
+
+
+
+
+// Alerta random al dar click a pagar
 document.querySelector('.js-payment-button')
   .addEventListener('click', () => {
     alert('hAs sIdO hAcKedO - Fr quieres pagarle a una pagina ficticia llamada Abidas? Es una pena que no sepa meter pagos...')

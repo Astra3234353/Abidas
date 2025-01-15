@@ -50,26 +50,27 @@ export function renderGridItems () {
       <a href="search.html?productId=${product.id}">
         <div class="product-container__first-sec">
           <div class="product-container__image-cont">
-            <img src="${product.getUrl()}" class="product-container__image" draggable="false">
+            <img src="${product.getUrl()}" class="product-container__image disable-select" draggable="false">
+            <img src="${product.extraUrl.url1}" class="product-container__image-hover disable-select" draggable="false" loading="lazy">
           </div>
         </div>
         <div class="product-container__second-sec">
           <p class="product-container__price">
             <strong>$${product.price}</strong>
           </p>
-          <p product-container__name>
+          <p class="product-container__name">
             ${product.name}
           </p>
-            <div class="product-container__tags">
-              ${product.ArrayToString(product.getTags())}
-            </div>
-            <div class="product-container__extra-tags">
-              <p>${product.extra}</p>
-            </div>
+          <div class="product-container__tags">
+            ${product.ArrayToString(product.getTags())}
+          </div>
+          <div class="product-container__extra-tags">
+            <p>${product.extra}</p>
+          </div>
         </div>
-        </a>
-      </div>
-    `
+      </a>
+    </div>
+    `;
   })
 
   document.querySelector('.main__grid')
