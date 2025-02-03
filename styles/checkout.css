@@ -160,6 +160,12 @@ h3 {
   grid-template-columns: 1fr;
 }
 
+.cart-summary__product-info h4 {
+  color: #000000;
+  font-weight: 400;
+  margin: 5px 0 20px 0;
+}
+
 .cart-summary__aside button {
   width: 100%;
 }

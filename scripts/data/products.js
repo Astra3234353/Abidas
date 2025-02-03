@@ -52,6 +52,7 @@ class Product {
   }
 }
 
+
 export const products = [
   {
   url: 'img/products/Tenis_SL_72_OG_Verde_IF1938_01_standard.avif',
