@@ -23,7 +23,7 @@ h2 {
 .main__img-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   max-height: 67vh;
   overflow: hidden;
 }
