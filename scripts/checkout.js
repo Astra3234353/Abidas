@@ -2,6 +2,9 @@ import { cart, deleteCartItem } from "./data/cart.js";
 import { addScrollEvent } from "./search/slider.js";
 import { products } from "./data/products.js";
 import { addComasToNumber } from "./utils/formatCurrency.js";
+import { renderHeaderProducts, renderHeaderCartProducts } from './products/update-header-products.js'
+
+renderHeaderProducts();
 
 let totalPrice = 0;
 let totalProducts = 0;
@@ -58,6 +61,7 @@ function renderCartSummary() {
 
         loadPriceValues();
         loadPriceElements();
+        renderHeaderCartProducts();
       })
     });
 }

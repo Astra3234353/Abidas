@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-div, ul, nav, header, footer, a, li, label, p, h1{
+div, ul, nav, header, footer, a, li, label, p, h1, h2, h3, h4, h5{
   margin: 0;
   padding: 0;
 }
@@ -109,6 +109,38 @@ div, ul, nav, header, footer, a, li, label, p, h1{
   position: absolute;
   left: 68px;
   top: 20px;
+}
+
+.wishlist-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #0071ae;
+  color: #fff;
+}
+
+.header__search-link {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: 2px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #0071ae;
+  color: #fff;
 }
 
 /* ------ Header Queries -------*/
@@ -312,7 +344,7 @@ div, ul, nav, header, footer, a, li, label, p, h1{
 
 .links-container a {
   text-decoration: none;
-  margin-left: 24px;
+  margin: 0 12px;
 }
 
 /* ----------- Opinion Section Ends---------- */

@@ -195,9 +195,26 @@ a {
   display: flex;
   margin: 20px;
   margin-left: 0;
+  align-items: center;
 }
 
 .product__third-grid button {
   flex: 1;
+}
+
+.add-to-wishlist-buton {
+  background-color: transparent;
+  max-width: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border: solid 1px #000;
+  transition: all 0.3s;
+}
+
+.add-to-wishlist-buton:active {
+  transform: scale(1.03)
 }
 /* ----------- Third Product Section Ends ---------- */

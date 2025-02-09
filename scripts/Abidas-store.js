@@ -1,5 +1,8 @@
 import { renderGridItems, addGridItemTest, randomRenderGridItems} from "./products/load-product.js";
 import { getUrlParam } from "./data/URLparams.js";
+import { renderHeaderProducts } from './products/update-header-products.js'
+
+renderHeaderProducts();
 
 function renderPage() {
   const search = getUrlParam('search');

@@ -1,8 +1,29 @@
 /* wishlist  */
 .wishlist {
-  margin: 0 30px;
+  max-width: 1000px;
+  padding: 0 40px;
+  margin: auto;
+  margin-top: 40px;
 }
 
+.wishlist__product a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Wishlist header  */
+
+.wishlist-header h1{
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.wishlist-header p {
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
 
 /* wishlist-first */
 .wishlist__product {
