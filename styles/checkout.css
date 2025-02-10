@@ -93,10 +93,17 @@ h3 {
 .cart-summary__product-info {
   margin: 0 20px;
   text-transform: uppercase !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.cart-summary__product-info {
-  position: relative;
+.cart-summary__product-info-second {
+  flex: 1;
+}
+
+.cart-summary__product-info-third {
+  text-align: end;
 }
 
 .delete-item-button {

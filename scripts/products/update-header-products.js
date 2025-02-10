@@ -1,3 +1,5 @@
+import { wishlist } from "../data/wishlist.js";
+
 export function renderHeaderCartProducts() {
   let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
 
@@ -16,6 +18,18 @@ export function renderHeaderCartProducts() {
   }
 }
 
+export function renderHeaderWishlistProducts() {
+  let wishlistElem =  document.querySelector('.wishlist-count');
+
+  if (wishlist[0]) {
+    wishlistElem.innerHTML = wishlist.length;
+    wishlistElem.style.display = 'block';
+  } else {
+    wishlistElem.style.display = 'none';
+  }
+}
+
 export function renderHeaderProducts() {
   renderHeaderCartProducts();
+  renderHeaderWishlistProducts();
 }

@@ -22,12 +22,18 @@ function renderCartSummary() {
         <div class="cart-summary__product js-product-${product.id}">
           <img src="${product.getUrl()}" class="cart-summary__product-img disable-select" alt="Superstar" draggable="false">
           <div class="cart-summary__product-info">
-            <h4>${product.name}</h4>
-            <p>${product.extra}</p>
-            <p> Talla: MX 11</p>
-            <p class="old-product-price">$${addComasToNumber(product.price + 300)}</p>
-            <p class="final-product-price">$${addComasToNumber(product.price)}</p>
-            <p>Cantidad: ${cartItem.quantity}</p>
+            <div class="cart-summary__product-info-first">
+              <h4>${product.name}</h4>
+            </div>
+            <div class="cart-summary__product-info-second">
+              <p>${product.extra}</p>
+              <p> Talla: MX 11</p>
+              <p class="old-product-price">$${addComasToNumber(product.price + 300)}</p>
+              <p class="final-product-price">$${addComasToNumber(product.price)}</p>
+            </div>
+            <div class="cart-summary__product-info-third">
+              <p>Cantidad: <strong>${cartItem.quantity}</strong></p>
+            </div>
             <button class="delete-item-button js-delete-item-btn" data-product-id="${product.id}">
               <div>
                 <svg fill="#000000" width="15px" height="15px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M0 14.545L1.455 16 8 9.455 14.545 16 16 14.545 9.455 8 16 1.455 14.545 0 8 6.545 1.455 0 0 1.455 6.545 8z" fill-rule="evenodd"></path> </g></svg>
@@ -122,12 +128,8 @@ function loadPriceValues() {
   })
 }
 
-
-
-
-
 // Alerta random al dar click a pagar
 document.querySelector('.js-payment-button')
   .addEventListener('click', () => {
-    alert('hAs sIdO hAcKedO - Fr quieres pagarle a una pagina ficticia llamada Abidas? Es una pena que no sepa meter pagos...')
+    alert(`Quieres pagar ${totalPrice}? Nuh uh`)
   })

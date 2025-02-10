@@ -1,7 +1,6 @@
 /* wishlist  */
 .wishlist {
   max-width: 1000px;
-  padding: 0 40px;
   margin: auto;
   margin-top: 40px;
 }
@@ -9,6 +8,10 @@
 .wishlist__product a {
   text-decoration: none;
   color: inherit;
+}
+
+.wishlist-js {
+  padding: 0 20px;
 }
 
 /* Wishlist header  */
@@ -39,7 +42,6 @@
 }
 
 .wishlist__product-img {
-  min-width:  150px;
   position: relative;
 }
 
@@ -108,6 +110,14 @@
 @media (min-width: 700px) {
   .wishlist__first {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wishlist {
+    padding: 0 40px;
+  }
+
+  .wishlist-js {
+    padding: 0;
   }
 }
 

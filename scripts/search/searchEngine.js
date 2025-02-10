@@ -1,7 +1,8 @@
 import { products } from "../data/products.js";
 import { addGalleryEvent, addScrollEvent } from "./slider.js";
 import { saveCartItem } from "../data/cart.js";
-import { renderHeaderCartProducts } from '../products/update-header-products.js'
+import { renderHeaderCartProducts, renderHeaderWishlistProducts } from '../products/update-header-products.js'
+import { saveWishlistItem } from "../data/wishlist.js";
 
 export function renderProductElement(productId) {
   const productElem = document.querySelector('.product')
@@ -64,7 +65,7 @@ export function renderProductElement(productId) {
               </section>
               <div class="product__third-add-cart">
                 <button class="black-abidas-btn js-add-to-cart">Agregar al carrito</button>
-                <button class="add-to-wishlist-buton">
+                <button class="add-to-wishlist-buton js-add-to-wishlist">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24" width="24px" height="24px">
                     <title>wishlist-active</title>
                     <path 
@@ -84,10 +85,17 @@ export function renderProductElement(productId) {
     } 
   })
 
-  document.querySelector('.js-add-to-cart').addEventListener('click', () => {
-    saveCartItem(productId);
-    renderHeaderCartProducts();
-  });
+  document.querySelector('.js-add-to-cart')
+    .addEventListener('click', () => {
+      saveCartItem(productId);
+      renderHeaderCartProducts();
+    });
+
+  document.querySelector('.js-add-to-wishlist')
+    .addEventListener('click', () => {
+      saveWishlistItem(productId);
+      renderHeaderWishlistProducts();
+    })
   
   addGalleryEvent();
   addScrollEvent();
