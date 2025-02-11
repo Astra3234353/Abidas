@@ -1,5 +1,3 @@
-import { wishlist } from "../data/wishlist.js";
-
 export function renderHeaderCartProducts() {
   let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
 
@@ -19,8 +17,11 @@ export function renderHeaderCartProducts() {
 }
 
 export function renderHeaderWishlistProducts() {
+  let wishlist = localStorage.getItem('wishlist') ? JSON.parse(localStorage.getItem('wishlist')) : [];
+
   let wishlistElem =  document.querySelector('.wishlist-count');
 
+  console.log(wishlist.length)
   if (wishlist[0]) {
     wishlistElem.innerHTML = wishlist.length;
     wishlistElem.style.display = 'block';

@@ -21,3 +21,15 @@ export function saveWishlistItem(productId) {
     localStorage.setItem('wishlist', JSON.stringify(wishlist));
   }
 }
+
+export function deleteWishlistItem(productId) {
+  const newWishlist = wishlist.filter((id) => {
+    if (id !== productId) {
+      return true
+    } else {
+      return false
+    }
+  })
+
+  localStorage.setItem('wishlist', JSON.stringify(newWishlist));
+}
