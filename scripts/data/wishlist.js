@@ -18,11 +18,13 @@ export function saveWishlistItem(productId) {
 
   if (!doubledProduct) {
     wishlist.push(productId)
-    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    updateWishlist(wishlist)
   }
 }
 
 export function deleteWishlistItem(productId) {
+  let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
   const newWishlist = wishlist.filter((id) => {
     if (id !== productId) {
       return true
@@ -31,5 +33,9 @@ export function deleteWishlistItem(productId) {
     }
   })
 
-  localStorage.setItem('wishlist', JSON.stringify(newWishlist));
+  updateWishlist(newWishlist);
+}
+
+function updateWishlist(newWishlistvalue) {
+  localStorage.setItem('wishlist', JSON.stringify(newWishlistvalue));
 }
