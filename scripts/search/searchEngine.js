@@ -1,10 +1,11 @@
 import { products } from "../data/products.js";
 import { addGalleryEvent, addScrollEvent } from "./slider.js";
 import { saveCartItem } from "../data/cart.js";
-import { renderHeaderCartProducts, renderHeaderWishlistProducts } from '../products/update-header-products.js'
+import { renderHeaderCartProducts, renderHeaderWishlistProducts, updateProductSizeBtn } from '../products/update-header-products.js'
 import { saveWishlistItem } from "../data/wishlist.js";
 
 export function renderProductElement(productId) {
+  let productSize;
   const productElem = document.querySelector('.product')
 
   products.forEach((product) => {
@@ -46,23 +47,23 @@ export function renderProductElement(productId) {
             <div class="product__third-grid">
               <p>Tallas</p>
               <section class="product-size-grid disable-select">
-                <p>MX 9</p>
-                <p>MX 2</p>
-                <p>MX 2.5</p>
-                <p>MX 3</p>
-                <p>MX 3.5</p>
-                <p>MX 4</p>
-                <p>MX 4.5</p>
-                <p>MX 5</p>
-                <p>MX 5.5</p>
-                <p>MX 6</p>
-                <p>MX 6.5</p>
-                <p>MX 7</p>
-                <p>MX 7.5</p>
-                <p>MX 8</p>
-                <p>MX 8.5</p>
-                <p>MX 9</p>
+                <p data-product-size="9">MX 9</p>
+                <p class="js-size-btn" data-product-size="2">MX 2</p>
+                <p class="js-size-btn" data-product-size="2.5">MX 2.5</p>
+                <p class="js-size-btn" data-product-size="3">MX 3</p>
+                <p class="js-size-btn" data-product-size="3.5">MX 3.5</p>
+                <p class="js-size-btn" data-product-size="4">MX 4</p>
+                <p class="js-size-btn" data-product-size="4.5">MX 4.5</p>
+                <p class="js-size-btn" data-product-size="5">MX 5</p>
+                <p class="js-size-btn" data-product-size="5.5">MX 5.5</p>
+                <p class="js-size-btn" data-product-size="6">MX 6</p>
+                <p class="js-size-btn" data-product-size="6.5">MX 6.5</p>
+                <p class="js-size-btn" data-product-size="7">MX 7</p>
+                <p class="js-size-btn" data-product-size="7.5">MX 7.5</p>
+                <p class="js-size-btn" data-product-size="8">MX 8</p>
+                <p class="js-size-btn" data-product-size="8.5">MX 8.5</p>
               </section>
+              <p class="js-addSize-alert" style="display: none">Por favor, selecciona tu talla</p>
               <div class="product__third-add-cart">
                 <button class="black-abidas-btn js-add-to-cart">Agregar al carrito</button>
                 <button class="add-to-wishlist-buton js-add-to-wishlist">
@@ -85,10 +86,22 @@ export function renderProductElement(productId) {
     } 
   })
 
+  document.querySelectorAll('.js-size-btn')
+    .forEach((button) => {
+      button.addEventListener('click', () => {
+        productSize = button.dataset.productSize
+        updateProductSizeBtn(productSize);        document.querySelector('.js-addSize-alert').style.display = 'none';
+      })
+    })
+
   document.querySelector('.js-add-to-cart')
     .addEventListener('click', () => {
-      saveCartItem(productId);
-      renderHeaderCartProducts();
+      if (productSize) {
+        saveCartItem(productId, productSize);
+        renderHeaderCartProducts();
+      } else {
+        document.querySelector('.js-addSize-alert').style.display = 'block';
+      }
     });
 
   document.querySelector('.js-add-to-wishlist')

@@ -217,4 +217,13 @@ a {
 .add-to-wishlist-buton:active {
   transform: scale(1.03)
 }
+
+.js-addSize-alert {
+  color: red !important;
+  font-weight: 400 !important;
+  margin: 0;
+  padding: 10px !important;
+  text-align: center;
+  margin-bottom: -25px!important;
+}
 /* ----------- Third Product Section Ends ---------- */

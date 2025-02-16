@@ -34,3 +34,16 @@ export function renderHeaderProducts() {
   renderHeaderCartProducts();
   renderHeaderWishlistProducts();
 }
+
+export function updateProductSizeBtn(productSize) {
+  document.querySelectorAll('.js-size-btn')
+    .forEach((elem) => {
+      if (elem.dataset.productSize == productSize) {
+        elem.style.backgroundColor = '#000';
+        elem.style.color = '#fff';
+      } else {
+        elem.style.backgroundColor = '#eceff1';
+        elem.style.color = '#000';
+      }
+    })
+}

@@ -4,15 +4,16 @@ function saveLocalStorage() {
   localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-export function saveCartItem(productId) {
+export function saveCartItem(productId, productSize) {
   let dupledItem;
   const correctItem = {
     id: productId,
-    quantity: 1
+    quantity: 1,
+    productSize
   }
 
   cart.forEach(item => {
-    if (item.id == productId) {
+    if (item.id == productId && item.productSize == productSize) {
       dupledItem = item;
     }
   });

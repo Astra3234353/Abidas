@@ -27,7 +27,7 @@ function renderCartSummary() {
             </div>
             <div class="cart-summary__product-info-second">
               <p>${product.extra}</p>
-              <p> Talla: MX 11</p>
+              <p> Talla: MX ${cartItem.productSize}</p>
               <p class="old-product-price">$${addComasToNumber(product.price + 300)}</p>
               <p class="final-product-price">$${addComasToNumber(product.price)}</p>
             </div>
