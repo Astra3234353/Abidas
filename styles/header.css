@@ -11,6 +11,11 @@ div, ul, nav, header, footer, a, li, label, p, h1, h2, h3, h4, h5{
   padding: 0;
 }
 
+img {
+  user-select: none; /* Prevents text selection */
+  -webkit-user-drag: none; /* Prevents dragging in WebKit browsers */
+}
+
 /* -------Header section*/
 
 .header {
@@ -23,6 +28,7 @@ div, ul, nav, header, footer, a, li, label, p, h1, h2, h3, h4, h5{
   top: 0;
   height: 60px;
   z-index: 2000;
+  user-select: none;
 }
 
 .header__open-nav-button {

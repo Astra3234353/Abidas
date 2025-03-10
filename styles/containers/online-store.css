@@ -81,13 +81,22 @@ a {
 }
 
 .product-container__price {
+  color: #000;
   font-size: 0.8rem;
   margin-bottom: 7px;
+}
+
+.product-container__name {
+  color: #333333;
 }
 
 .product-container__tags {
   color: #717171;
   padding-top: 3px;
+}
+
+.product-container__extra-tags p {
+  color: #333333;
 }
 
 /* -----  GRID QUERIES ----- */
