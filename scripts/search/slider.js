@@ -1,5 +1,4 @@
 export function addGalleryEvent() {
-  const wrapper = document.querySelector(".wrapper");
   const carousel = document.querySelector(".carousel");
   const images = document.querySelectorAll(".carousel__images");
   const buttons = document.querySelectorAll(".button");

@@ -99,6 +99,7 @@ export function renderProductElement(productId) {
       if (productSize) {
         saveCartItem(productId, productSize);
         renderHeaderCartProducts();
+        window.location.href = "cart.html";
       } else {
         document.querySelector('.js-addSize-alert').style.display = 'block';
       }
